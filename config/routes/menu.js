@@ -1,11 +1,15 @@
 var express = require('express'),
-	menuRoutes = express.Router();
+	menuRoutes = express.Router(),
+	bodyParser = require('body-parser'),
+	menusController = require('../../controllers/menus');
 
+//menuRoutes.get('/', function(req,res){
+	//console.log('index');
+	//menusController.getAll
+//})
 
-menuRoutes.get('/', function(req,res){
-	console.log('index');
-	res.send('index')	
-})
+menuRoutes.route('/')
+	.get(menusController.getAll)
 
 
 
