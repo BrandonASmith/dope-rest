@@ -16,3 +16,9 @@ var express		= require('express'),
 	app.listen(port)
 	console.log('Server started on', port)
 ```
+3. Create .gitignore // ignore node_modules
+
+4. Created Router on app.js and the moved it to config/routes/menu.js
+
+5. 
+
