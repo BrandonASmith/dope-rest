@@ -20,5 +20,13 @@ var express		= require('express'),
 
 4. Created Router on app.js and the moved it to config/routes/menu.js
 
-5. 
+5. Create Procfile // add 
+
+```
+web: node app.js
+```
+
+6. follow Heroku markdown
+
+7. build Schema
 
