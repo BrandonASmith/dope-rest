@@ -6,6 +6,7 @@ var express		= require('express'),
 	port		= process.env.PORT || 3000,
 	menuRouter	= require ('./config/routes/menu.js')
 
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/dope_rest')
 
 app.use( '/menu', menuRouter )
 
